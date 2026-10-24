@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>App Support · Le Nhung</title>
+<meta name="description" content="Support for apps by Le Nhung on the App Store: contact, purchases, subscriptions, refunds and data.">
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #5f5f66;
+    --line: #e3e1dc;
+    --accent: #d9482b;
+    --accent-ink: #ffffff;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --surface: #1c1c1f;
+      --text: #f2f2f4;
+      --muted: #a3a3ab;
+      --line: #2e2e33;
+      --accent: #ff7a5c;
+      --accent-ink: #1a0f0c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 28px 0 8px; }
+  nav { display: flex; gap: 20px; font-size: 15px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 32px 0 8px; letter-spacing: -0.02em; }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 28px; }
+  h2 { font-size: 22px; margin: 44px 0 12px; letter-spacing: -0.01em; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .contact-email { font-size: 20px; font-weight: 600; word-break: break-all; margin: 4px 0 16px; }
+  .button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 999px;
+  }
+  ul.checklist { margin: 8px 0 0; padding-left: 20px; }
+  ul.checklist li { margin: 2px 0; }
+  .note { color: var(--muted); font-size: 15px; margin: 16px 0 0; }
+  details {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 0 20px;
+    margin: 0 0 10px;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 0;
+    list-style-position: outside;
+  }
+  details > div { padding: 0 0 16px; }
+  details p { margin: 0 0 10px; }
+  details p:last-child { margin-bottom: 0; }
+  footer {
+    margin: 56px 0 0;
+    padding: 24px 0 40px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav>
+      <a href="marketing.html">Apps</a>
+      <a href="support.html" aria-current="page">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>App Support</h1>
+    <p class="lead">Need help with one of my apps? This page covers every app published by Le Nhung on the App Store.</p>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact" style="margin-top:0">Contact me</h2>
+      <p style="margin:0">Questions, bug reports and feature ideas are all welcome. I read every email and usually reply within a few days.</p>
+      <p class="contact-email">luongtsu.dev@gmail.com</p>
+      <a class="button" href="mailto:luongtsu.dev@gmail.com?subject=App%20Support">Email support</a>
+      <p class="note">To help me answer quickly, please include:</p>
+      <ul class="checklist">
+        <li>The app name and version</li>
+        <li>Your device model and iOS / iPadOS version</li>
+        <li>What happened, and the steps to make it happen again</li>
+        <li>A screenshot or screen recording, if you can</li>
+      </ul>
+      <p class="note">Tip: many of my apps have a “Contact” or “Feedback” item in Settings that fills in the app and device details for you.</p>
+    </section>
+
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>How do I restore my purchases on a new device?</summary>
+      <div>
+        <p>Sign in with the same Apple Account you used to buy, open the app, and tap <strong>Restore Purchases</strong> (usually in Settings or on the upgrade screen). Purchases are tied to your Apple Account, not to the device.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I cancel a subscription?</summary>
+      <div>
+        <p>Subscriptions are managed by Apple. On your iPhone or iPad, open <strong>Settings</strong> → your name → <strong>Subscriptions</strong>, choose the app, then tap <strong>Cancel Subscription</strong>.</p>
+        <p>Apple’s guide: <a href="https://support.apple.com/118428">Cancel a subscription from Apple</a>. Deleting the app does not cancel a subscription.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I request a refund?</summary>
+      <div>
+        <p>Apple handles all payments and refunds, so I can’t issue refunds myself. You can request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+        <p>Apple’s guide: <a href="https://support.apple.com/118223">Request a refund for apps or content that you bought from Apple</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Will my data move to my new iPhone or iPad?</summary>
+      <div>
+        <p>Apps that support iCloud sync keep your data in your own private iCloud account. Sign in with the same Apple Account on the new device and make sure iCloud is turned on for the app in <strong>Settings</strong> → your name → <strong>iCloud</strong>.</p>
+        <p>Apps without iCloud sync keep data only on the device. It moves to a new device when you restore from an iCloud or computer backup.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <div>
+        <p>Deleting the app removes the data stored on your device. Data synced to iCloud can be removed in <strong>Settings</strong> → your name → <strong>iCloud</strong> → <strong>Manage Account Storage</strong>.</p>
+        <p>If you need help deleting anything else, email me and I’ll take care of it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where can I read the privacy policy?</summary>
+      <div>
+        <p>Each app’s privacy policy is linked on its App Store page and inside the app. The App Store page also shows the app’s privacy label.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I have an idea for a feature.</summary>
+      <div>
+        <p>Great, please send it to <a href="mailto:luongtsu.dev@gmail.com?subject=Feature%20idea">luongtsu.dev@gmail.com</a>. I read every suggestion.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <p>Apps by Le Nhung · <a href="https://apps.apple.com/developer/le-nhung/id866126798">See all apps on the App Store</a></p>
+  </footer>
+</div>
+</body>
+</html>
