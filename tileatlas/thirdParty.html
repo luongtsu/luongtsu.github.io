@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Third-party libraries</title>
-<style>body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; padding:1em; line-height:1.45;}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software and third-party notices — Atlas Tile Puzzle</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Third-party libraries</h2>
-<p>Speak a Little Daily uses the following third-party software. Each remains under its own licence, linked below.</p>
+<main>
+<h1>Software and third-party notices</h1>
+<p><strong>Atlas Tile Puzzle</strong><br>Last updated: 23 November 2026</p>
 
-<p><strong>Firebase iOS SDK</strong> (Authentication, Cloud Firestore, Remote Config, App Check, Crashlytics)<br>
-Copyright Google LLC. Apache License 2.0 &mdash; <a href="https://github.com/firebase/firebase-ios-sdk">github.com/firebase/firebase-ios-sdk</a></p>
+<h2>Third-party SDKs</h2>
+<p>Version 2.0 includes two third-party SDKs, added with Swift Package Manager:</p>
+<ul>
+<li><strong>Google Mobile Ads SDK</strong> (version 13.13.0) — loads and shows rewarded video ads when you choose to watch one to unlock a painting. Provided by Google under the <a href="https://developers.google.com/admob/terms">Google Mobile Ads SDK terms</a>.</li>
+<li><strong>Google User Messaging Platform SDK</strong> (version 3.1.0) — shows the ad consent form where one is required and the “Ad privacy options” entry in Settings. Provided by Google under its applicable terms.</li>
+</ul>
+<p>These SDKs are not open-source software. The information they handle is described in the <a href="privacy.html">Privacy Policy</a> and in <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
 
-<p><strong>Google Sign-In for iOS</strong><br>
-Copyright Google LLC. Apache License 2.0 &mdash; <a href="https://github.com/google/GoogleSignIn-iOS">github.com/google/GoogleSignIn-iOS</a></p>
+<h2>Apple frameworks</h2>
+<p>The app also uses Apple system frameworks and Swift libraries:</p>
+<ul>
+<li>SwiftUI and UIKit — interface, image rendering and system sharing.</li>
+<li>Foundation, Observation and Combine — app services and state.</li>
+<li>SwiftData — local progress, postcards and personal photo records.</li>
+<li>PhotosUI and ImageIO — user-selected photo import and image preparation.</li>
+<li>StoreKit — the Pro purchase and its restoration.</li>
+<li>AVFoundation — gameplay sound effects.</li>
+<li>WidgetKit — the daily puzzle widget, with its local snapshot shared through an App Group.</li>
+</ul>
+<p>Apple system frameworks remain subject to Apple’s applicable terms. StoreKitTest and XCTest are used by the test targets and are not app runtime dependencies.</p>
 
-<p><strong>Google Mobile Ads SDK</strong> and <strong>Google User Messaging Platform SDK</strong><br>
-Copyright Google LLC. Provided under Google&rsquo;s terms &mdash; <a href="https://developers.google.com/admob/terms">developers.google.com/admob/terms</a></p>
+<h2>Sound credits</h2>
+<p>Gameplay sounds are adapted from <strong>Interface Sounds</strong> and <strong>Short jingles / Music Jingles</strong> by <a href="https://kenney.nl/">Kenney (Kenney Vleugels)</a>, provided under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>. CC0 permits copying, modification and redistribution, including commercial use. These credits do not imply endorsement of Atlas Tile Puzzle by Kenney.</p>
 
-<p><strong>GRDB.swift</strong><br>
-Copyright &copy; Gwendal Rou&eacute;. MIT License &mdash; <a href="https://github.com/groue/GRDB.swift">github.com/groue/GRDB.swift</a></p>
+<h2>Not included</h2>
+<p>The app does not include Firebase, Google Analytics, Google Sign-In, other analytics or crash-reporting SDKs, or any account service.</p>
 
-<p>Firebase also bundles its own dependencies (such as gRPC, Protocol Buffers and GoogleUtilities); their notices are available in the repository above.</p>
-
-<p>Apple frameworks (SwiftUI, Speech, StoreKit, AuthenticationServices and others) are used under the Apple Developer Program License Agreement.</p>
+<h2>Artwork and stories</h2>
+<p>Artwork collections and cultural stories are app content, not open-source software. Rights remain with their respective rights holders. These software notices grant no additional rights to reproduce or redistribute those materials. Personal photos remain yours; see the <a href="terms.html">Terms of Use</a>.</p>
+</main>
+<nav aria-label="Legal information">
+<a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="thirdParty.html">Software notices</a>
+</nav>
 </body>
 </html>
